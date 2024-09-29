@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Paytone+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.logo {
+  display: flex;
+}
+.logo h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: beige;
+  font-family:"IBM Plex Mono", monospace;;
+}
+header {
+  background-color: #333;
+  padding: 20px;
+}
+nav img {
+    width: 40px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .list a {
+    text-decoration: none;
+    font-size: 16px;
+    color: beige;
+    font-weight: 500;
+    margin-left: 40px;
+    position: relative;
+  }
+  header .list a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    transition: 0.3s;
+  }
+  header .list a:hover::before {
+    width: 100%;
+  }
+  .icons a,i{
+    text-decoration: none;
+    margin-left: 11px;
+    font-size: 33px;
+    display: inline;
+    color: beige;
+    text-align: center;
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .icons a,i:hover {
+    transform: scale(1.2);
+}
+/* New Arrivals */
+
+.title{
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 30px;
+  color: #333;
+}
+.title h1::before {
+  content: ""; 
+  display: inline-block;
+  width: 110px; 
+  height: 2px;
+  background-color: black; 
+  margin-right: 10px; 
+  margin: 10px;
+}
+.title h1::after {
+  content: ""; 
+  display: inline-block;
+  width: 110px; 
+  height: 2px;
+  background-color: black; 
+  margin-right: 10px; 
+  margin: 10px;
+}
+.common img {
+  width: 100%;
+  height:auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.common{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+  grid-gap: 3rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+.thum{
+  position: relative;
+  transition: all 0.3s cubic-bezier(.445,.05,.55, .95);
+  cursor: pointer;
+}
+.thum h3{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: right;
+  color: white;
+  top: 36px;
+  right:30px
+}
+.thum:hover{
+  filter: brightness(100%) hue-rotate(45deg);
+  transform: scale(1.05);
+}
+.content h2{
+  margin-top:20px;
+  color: rgb(121, 172, 204);
+}
+.content{
+  margin-bottom: 70px;
+}
+.container .text h2{
+  font-size: 45px;
+  line-height: 1.1;
+  margin: 40px; 
+}
+.container .text h2::before {
+  content: ""; 
+  display: inline-block;
+  width: 110px; 
+  height: 2px;
+  background-color: black; 
+  margin-right: 10px; 
+  margin: 10px;
+}
+.container .text h2::after {
+  content: ""; 
+  display: inline-block;
+  width: 110px; 
+  height: 2px;
+  background-color: black; 
+  margin-right: 10px; 
+  margin: 10px;
+}
+.row-items{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 2rem;
+  text-align: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin: 40px;
+}
+.container-box{
+  background-color: #fff;
+  border: 1px solid #F0eded;
+  padding: 50px 10px;
+  border-radius: 4px;
+  transition: all 1s ease 0s;
+  cursor:pointer
+}
+.container-img{
+  height: 90%;
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+  border-radius: 4px;
+  margin-bottom: 15px ;
+}
+.container-box h4{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.container-box p{
+  font-size: 15px;
+  color: gray;
+}
+.container-box:hover{
+  box-shadow: 5px 30px 56.1276px rgb(55 55  55 / 12%);
+  border:1px solid transparent;}
+  #contact{
+    background-color: rgba(0, 0, 0, 0.74);
+  }
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer{
+    padding: 20px 0;
+  }
+  .main ul li,a{
+    list-style: none;
+    text-decoration: none; 
+  }
+  .main .list{
+    width: 25%;
+  }
+  .list h4{
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .list h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -10px;
+    background-color: #fff;
+  }
+  .list ul li:not(:last-child){
+    margin-bottom: 16px;
+  }
+  .list ul li a{
+    color:#ffffffbf;
+    display: block;
+    font-size: 1.1rem;
+    transition: .3s;
+  }
+  .list ul li a:hover{
+    color: #fff;
+    transform: translateX(14px);
+  }
+  .social a{
+    height: 40px;
+    width: 40px;
+    background: #656060;
+    color: #6e54fa;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+  .social a:hover{
+    transform: scale(1.1);
+  }
+  .end-text{
+    text-align: center;
+    padding: 90px;
+  }
+  .end-text p{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  @media (max-width: 768px) {
+    .logo h2 {
+        font-size: 24px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list {
+        margin-top: 10px;
+    }
+    .list a {
+        font-size: 14px;
+    }
+    .icons {
+        margin-top: 10px;
+    }
+    .common {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
+    }
+    .thum h3 {
+        font-size: 20px;
+    }
+    .content h2 {
+        font-size: 18px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .main .list {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .title h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h2 {
+        font-size: 20px;
+    }
+    header {
+        padding: 15px;
+    }
+    nav img {
+        width: 30px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .common {
+        grid-template-columns: 1fr;
+    }
+    .end-text p {
+        font-size: 12px;
+    }
+    .icons a {
+        font-size: 28px;
+    }
+    .list ul li a {
+        font-size: 0.8rem;
+    }
+}

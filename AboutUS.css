@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Paytone+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.logo {
+  display: flex;
+}
+.logo h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: beige;
+  font-family:"IBM Plex Mono", monospace;;
+}
+header {
+  background-color: #333;
+  padding: 20px;
+}
+nav img {
+    width: 40px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .list a {
+    text-decoration: none;
+    font-size: 16px;
+    color: beige;
+    font-weight: 500;
+    margin-left: 40px;
+    position: relative;
+  }
+  header .list a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    transition: 0.3s;
+  }
+  header .list a:hover::before {
+    width: 100%;
+  }
+  .icons a,i{
+    text-decoration: none;
+    margin-left: 11px;
+    font-size: 33px;
+    display: inline;
+    color: beige;
+    text-align: center;
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .icons a,i:hover {
+    transform: scale(1.2);
+  }
+  .about {
+    background-color: #f4f4f4;
+  }
+  .flip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #004643;
+    padding: 20px;
+  }
+  .flip .img {
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+  }
+  .flip .img .bor {
+    width: 350px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(.200,.05,.55, .95);
+    cursor: pointer;
+  }
+  .flip .img .bor:hover{
+    filter: brightness(100%) hue-rotate(20deg);
+    transform: scale(1.05);
+  }
+  .flip .img .hor {
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+    position: relative;
+    right: 90px;
+    top: 100px;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(.200,.05,.55, .95);
+    cursor: pointer;
+  }
+  .flip .img .hor:hover{
+    filter: brightness(100%) hue-rotate(20deg);
+    transform: scale(1.05);
+  }
+  
+  .flip .text {
+    width: 400px;
+    color: rgb(190, 189, 189);
+  }
+  .about .text p {
+    margin: 16px 0 16px;
+    font-family: "Prompt";
+    font-size: 20px;
+  }
+  .about .text h2 {
+    color: white;
+    font-size: 60px;
+    font-family: "Edu QLD Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  .about .text a {
+    color: #538bc8;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .about .text a:hover {
+    color: #68a4e5;
+    text-decoration: underline;
+  }
+  #contact{
+    background-color: rgba(0, 0, 0, 0.74);
+  }
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer{
+    padding: 20px 0;
+  }
+  .main ul li,a{
+    list-style: none;
+    text-decoration: none; 
+  }
+  .main .list{
+    width: 25%;
+  }
+  .list h4{
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .list h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -10px;
+    background-color: #fff;
+  }
+  .list ul li:not(:last-child){
+    margin-bottom: 16px;
+  }
+  .list ul li a{
+    color:#ffffffbf;
+    display: block;
+    font-size: 1.1rem;
+    transition: .3s;
+  }
+  .list ul li a:hover{
+    color: #fff;
+    transform: translateX(14px);
+  }
+  .social a{
+    height: 40px;
+    width: 40px;
+    background: #656060;
+    color: #6e54fa;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+  .social a:hover{
+    transform: scale(1.1);
+  }
+  .end-text{
+    text-align: center;
+    padding: 90px;
+  }
+  .end-text p{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  /* Mobile Styles */
+@media (max-width: 768px) {
+
+  /* Header and Navigation */
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav img {
+    width: 30px;
+    margin-bottom: 10px;
+  }
+
+  header .list a {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .icons a, i {
+    font-size: 25px;
+    margin-left: 5px;
+  }
+
+  /* About Us Section */
+  .about {
+    padding: 20px 10px;
+  }
+
+  .flip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .flip .img .bor, 
+  .flip .img .hor {
+    width: 90%; /* Image will take 90% of the available width */
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  .flip .img .hor{
+    top: 0px;
+    left: 0px;
+  }
+
+  .flip .text {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about .text h2 {
+    font-size: 35px;
+  }
+
+  .about .text p {
+    font-size: 16px;
+  }
+
+  .btnn a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* Footer Section */
+  .main {
+    display: block;
+    text-align: center;
+  }
+
+  .main .list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .list h4 {
+    font-size: 18px;
+  }
+
+  .list ul li a {
+    font-size: 14px;
+  }
+
+  .social a {
+    height: 35px;
+    width: 35px;
+    font-size: 18px;
+  }
+
+  .end-text p {
+    font-size: 12px;
+  }
+
+}
